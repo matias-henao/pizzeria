@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le pizze di Skinny</title>
+    <link rel="stylesheet" href="/css/examen.css">
+</head>
+<body>
+    <h1>Bienvenido a le pizze di Skinny</h1>
+    <p>Un gusto saludar! aca te presentamos las mejores pizzas de todo medellin, con autores directamente de napoles. Te traemos la tradicion de italia hasta medellin para que conozcas realmente como se dieron originalmente esta comida tan exquisita. somos <i>le pizze di Skinny</i> y esperamos que sea de tu agrado disfrutar de nuestro servicio</p>
+    <div class="container">
+        <label for="pizza">Selecciona una pizza:</label>
+        <select id="pizza">
+            <option value="14000">Queso - $14.000</option>
+            <option value="16000">Jamón y Queso - $16.000</option>
+            <option value="20000">Especial - $20.000</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" value="1" min="1">
+
+        <div class="extras">
+            <label><input type="checkbox" id="maiz" value="2000"> Maíz (2.000)</label>
+            <label><input type="checkbox" id="extraQueso" value="3000"> Queso Extra (3.000)</label>
+            <label><input type="checkbox" id="pollo" value="4000"> Pollo (4.000)</label>
+           
+        </div>
+
+        <button onclick="calcularTotal()">Calcular Total</button>
+        <div class="result" id="resultado">
+        </div>
+    </div>
+
+    <script src="/js/examen.js"></script>
+    
+</body>
+</html>
